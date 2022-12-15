@@ -31,7 +31,7 @@ function requestApi(city){
 
 function onSuccess(position){
     const {latitude, longitude} = position.coords; 
-    api = 'https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=388db7b04f06f96d37b5760ddd42ad87' ;
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=388db7b04f06f96d37b5760ddd42ad87`;
     fetchData();
 }
 
